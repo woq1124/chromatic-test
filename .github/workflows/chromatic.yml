@@ -2,11 +2,7 @@
 name: 'Chromatic'
 
   # NOTE: pull_request 트리거는 git의 head를 알 수 없어 turbosnap이 동작하지 못한다고 한다. https://www.chromatic.com/docs/turbosnap
-on:
-  workflow_call:
-    secrets:
-      CHROMATIC_PROJECT_TOKEN:
-        required: true
+on: ['push']
 
 jobs:
   deployment:
