@@ -1,10 +1,8 @@
 # .github/workflows/chromatic.yml
 name: 'Chromatic'
 
-on:
-  push:
-    branches-ignore:
-      - "develop"
+# Event for the workflow
+on: push
 
 # List of jobs
 jobs:
